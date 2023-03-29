@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "header.html" %}
+</head>
+<body>
+    <section class="white-section" id="project-overview">
+        <div class="container">
+            <div class="row">
+                <div class="overview-div">
+                    <h1 class="proj-title"><strong>{{ project.title }}</strong></h1>
+                    <img class="project-image" src="{{ url_for('static', filename=project.image) }}">
+                    <h2 class="proj-sub">Project Overview:</h2>
+                    <p class="proj-overview"> {{ project.overview }}</p>
+                    <h5><strong>Tools used:</strong></h5>
+                    <p><em>{{ project.tools }}</em></p>
+                    <h4><strong>Check:</strong></h4>
+                    <a class="btn btn-outline-dark reference-button" href="{{ project.source }}" role="button"><i class="fa-brands fa-github"></i> Source Code</a>
+                    <a class="btn btn-outline-dark reference-button" href="{{ project.link }}" role="button"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Link</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include "footer.html" %}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "header.html" %}
+</head>
+<body>
+    <section class="white-section" id="introduction">
+        <div class="container">
+            <div class="intro">
+                <h5>Good day, my name is</h5>
+                <h1>John Uby C. Solinap</h1>
+                <h2>An aspiring Programmer.</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="colored-section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about col-lg-6">
+                    <hr>
+                    <h1>About Me</h1>
+                    <p>I am a graduate of Computer Engineering and currently a Telecommunications Field Engineer, and I'm
+                        looking for a shift in my career to being a full time programmer as I've only been able to program
+                        or study anything about technology after my work. Python is the programming language that I choose
+                        to start my journey, so all the projects that I have created are done using Python, and I am focused
+                        on enhancing my programming skills utilizing python at the moment.</p>
+                    <p>I am self-taught right now and planning to learn other programming languages, software, and technologies
+                        that is necessary for my growth in the near future. Consistently working to improve my skills, Self-disciplined and focused on
+                        the task at hand. Passionate to learn more about technologies that will change the world!</p>
+                    <a class="btn btn btn-outline-light btn-lg" href="#" role="button"><i class="fa-regular fa-file"></i> See my Resume</a>
+                    <hr>
+                </div>
+                <div class="prof-pic col-lg-6">
+                    <img src="{{ url_for('static', filename='images/personal-pic.JPG') }}" class="my-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="white-section" id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="project-list">
+                    <hr>
+                    <h1>Portfolio</h1>
+                </div>
+                {% for project in all_projects %}
+                <div class="project-img col-lg-4 col-md-6">
+                    <div class="card" >
+                        <img src="{{ url_for('static', filename=project.image) }}" class="image">
+                        <div class="card-body">
+                        <a class="card-text" href="{{ url_for('get_project', title=project.title) }}">Check Overview >></a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="project-list">
+                    <h5>For the source codes and more projects, please visit my <a href="https://github.com/UbySolinap" type="button" class="btn btn-outline-dark download-button"><i class="fa-brands fa-github"></i> Github</a></h5>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include "footer.html" %}

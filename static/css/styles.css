@@ -1,0 +1,228 @@
+/* Navbar Section */
+.navbar {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.navbar-nav > li{
+    padding-left:8px;
+    padding-right:8px;
+}
+
+.nav-name {
+    color: white;
+    margin: 10px;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+}
+
+/* Section */
+section {
+    font-family: 'Montserrat';
+    padding-left: 80px;
+    padding-right: 60px;
+}
+
+/* White Section */
+.white-section {
+    color: black;
+    padding-bottom: 8rem;
+    padding-top: 5rem;
+}
+
+/* Colored Section */
+.colored-section {
+    color: white;
+    background-color: #28282B;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+
+/* Intro Section */
+#introduction {
+    padding-top: 12.8rem;
+    padding-bottom: 12.5rem;
+}
+
+.intro {
+    padding-top: 50px;
+}
+
+.intro h1 {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.intro h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/* About Section */
+
+.about h1{
+    font-weight: 700;
+}
+
+.about p {
+    margin-top: 30px;
+    line-height: 2;
+}
+
+.about hr {
+    height: 2px;
+    background-color: white;
+    color: white;
+    border: 0;
+}
+
+.about a {
+    margin: 10px 0px;
+}
+
+.prof-pic {
+    padding-top: 35px;
+    text-align: center;
+}
+
+.my-img {
+    width: auto;
+    height: 530px;
+}
+
+/* Projects Section */
+
+.proj-title {
+    font-weight: 700;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.proj-sub {
+    font-weight: 700;
+}
+
+.project-list hr {
+    height: 2px;
+    background-color: #000000;
+    color: #000000;
+    border: 0;
+}
+
+.project-img {
+    padding: 25px 20px;
+}
+
+.card {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    background-color: #28282B;
+}
+
+.card-text {
+    color: white;
+    text-decoration: none;
+}
+
+.card-text:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Overview Section */
+
+.overview-div {
+    position: relative;
+    top: 60px;
+    padding-top: 30px;
+}
+
+.overview-div p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 70px;
+}
+
+.overview-div h4{
+    padding-bottom: 10px;
+}
+
+.overview-div button {
+    margin-right: 15px;
+}
+
+.proj-overview {
+    font-size: 20px;
+}
+
+.project-image {
+    max-width: 90%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.reference-button {
+    margin-right: 10px;
+}
+
+/* Footer Division */
+#footer {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.footer-div {
+    text-align: center;
+}
+
+.contact-btn {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.icons {
+    margin: 0px 20px;
+    color: gray;
+}
+
+.icons:hover {
+    color: white;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+.footer-hr {
+    margin: auto;
+    width: 34%;
+    margin-top: 20px;
+}
+
+.footer-logo {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 20px;
+}
+
+/* Modal section */
+#myModal {
+    font-family: 'Montserrat';
+}
+
+.form-group {
+    margin: 20px 0px;
+}
+
+input[type=submit]{
+    margin: 20px 0px;
+}
