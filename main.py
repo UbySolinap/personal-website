@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, request
+from flask import Flask, render_template, redirect, url_for, request, send_from_directory
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, TextAreaField
 from wtforms.validators import DataRequired, Email
@@ -83,6 +83,11 @@ def get_project(title):
         if proj.title == title:
             clicked_project = proj
     return render_template("project.html", project=clicked_project, form=form)
+
+
+@app.route("/download", methods=["GET"])
+def download():
+    return send_from_directory('static/files', path="Solinap John Uby CV.pdf", as_attachment=True)
 
 
 if __name__ == '__main__':
