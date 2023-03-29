@@ -45,7 +45,7 @@ section {
 /* Intro Section */
 #introduction {
     padding-top: 12.8rem;
-    padding-bottom: 12.5rem;
+    padding-bottom: 15rem;
 }
 
 .intro {
@@ -85,13 +85,13 @@ section {
 }
 
 .prof-pic {
-    padding-top: 35px;
+    padding-top: 15px;
     text-align: center;
 }
 
 .my-img {
-    width: auto;
-    height: 530px;
+    width: 80%;
+    height: auto;
 }
 
 /* Projects Section */
